@@ -1,0 +1,290 @@
+
+.bungkus{
+	margin: 0 auto;
+	width: 40%;
+	height: 500px;
+}
+.login{
+	margin: 90px 0px;
+	height: 500px;
+	border-radius: 10px;
+}
+
+.inputan{
+	margin: 0 auto;
+	width: 80%;
+}
+
+.inputan input{
+	width: 85%;
+	height: 50px;
+	margin: 0px 0px;
+	border: none;
+	background: #011a27;
+	float: left;
+	color: white;
+}
+
+.username , .password{
+	background: #011a27;
+	margin: 10px 0px;
+	
+}
+
+.submit{
+	margin: 0 auto;
+	width: 80%;
+}
+
+.submit input{
+	float: right;
+	width: 30%;
+	background: #011a27;
+	border: none;
+	color: white;
+	height: 40px;
+}
+
+.logo{
+	margin: 0 auto;
+	width: 45%;
+}
+
+#utm{
+	background: url(../img/20161116_070941.jpg) no-repeat;
+	background-size: cover;
+	height: 680px;
+}
+#mainsiswa{
+	margin: 0px 0px;
+	background: url(../img/20161116_070941.jpg);
+	background-size: cover;
+	height: 790px;
+	z-index: -200;
+}
+
+.nama_kelas{
+	margin: 20px 0px;
+	color: white;
+	padding: 0px 10px;
+	font-size: 20px;
+}
+
+.sambut{
+	text-align: center;
+	color: white;
+}
+
+#usr{
+	margin: 50px 440px;
+}
+
+#batas{
+	width: 200px !important;
+}
+
+.cik{
+	background: url(../img/cik.png)no-repeat;
+	width: 30%;
+	float: left;
+	margin: 0px 190px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.cik:hover{
+	background: url(../img/cikhover.png) no-repeat;
+}
+.cik1{
+	background: url(../img/cik2.png)no-repeat;
+	width: 40%;
+	float: right;
+	height: 200px;
+	cursor: pointer;
+}
+
+.cik1:hover{
+	background: url(../img/cik2hover.png) no-repeat;
+}
+.over{
+	background: rgba(0, 0, 0, 0.6);
+	height: 790px;
+	width: 100%;
+	position: absolute;
+}
+
+.overlay1{
+	background: rgba(0, 0, 0, 0.6);
+	height: 450px;
+	width: 100%;
+	position: absolute;
+	z-index: 999;
+}
+.row{
+	margin: 0px 0px;	
+}
+
+#ket_absen{
+	margin: 0px 500px;
+}
+
+.akun{
+	margin: 0 auto;
+	width: 30%;
+}
+
+.akun h3{
+	float: left;
+	width: 80%;
+}
+
+.akun a{
+	float: left;
+}
+
+.tmb_submit{
+	background: black;
+	border: none;
+	padding: 15px 40px;
+	color: white
+}
+
+.navigasi{
+	position: fixed;
+	top: 0;
+	background: black;
+	height: 100px;
+	width: 100%;
+	z-index: 99999;
+}
+
+.forakun{
+	float: right;
+	width: 30%;
+	margin: 5px 0px;
+}
+
+.forakun li{
+	float: left;
+	display: inline-block;
+	padding: 10px 10px;
+}
+.isipesan{
+	position: absolute;
+	top: 90px;
+	display: none;
+	width: 25%;
+	height: 250px;
+	z-index: 88888888;
+	border-top: 5px solid red;
+	right: 10px;
+	background: black;
+	color: white;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+#pesan , #settings{
+	cursor: pointer;
+}
+
+.sender , .konten{
+	margin: 0px 10px;
+	width: 90%;
+}
+
+.isisettings{
+	position: absolute;
+	top: 90px;
+	width: 15%;
+	height: 120px;
+	z-index: 88888888;
+	border-top: 5px solid red;
+	right: 10px;
+	background: black;
+	color: white;
+	display: none;
+}
+
+
+.liset{
+	color: white;
+	padding: 10px 10px;
+}
+
+.liset:hover{
+	background: white;
+	color: red;
+}
+
+.dataabsen{
+	background:rgba(0, 0, 0, 0.5); !important;
+	margin: 130px 0px;
+	height: 500px;
+	padding: 15px 0px 20px 0px;
+	border-radius: 10px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.poo{
+	position: absolute;
+	top: 90px;
+	width: 25%;
+	height: 250px;
+	z-index: 88888888;
+	border-top: 5px solid red;
+	right: 200px;
+	display: none;
+	background: black;
+	color: white;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.pii,.pee{
+	margin: 0px 10px;
+	width: 90%;
+}
+
+.uoo{
+	position: absolute;
+	top: 90px;
+	right: 180px;
+	border-top: 5px solid red;
+	background: black;
+	width: 15%;
+	height: 120px;
+	display: none;
+}
+
+.iop{
+	list-style: none;
+	text-decoration: none;
+	color: white;
+	left: 0px;
+	margin: 10px 0px;
+	padding: 10px 10px;
+}
+
+#awal{
+	border-radius: 10px;
+	
+}
+
+.liat{
+	position: fixed;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.6);
+	right: 0px;
+	border-top-left-radius: 5px;
+	height: 500px;
+	width: 20%;
+	padding: 5px 10px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+p{
+	font-size=50%;
+}

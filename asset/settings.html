@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/materialize.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+<div class="navigasi">
+	<img src="../asset/img/cik.png" alt="" style="margin:-60px 0px;">
+	<ul class="forakun">
+		<li class="nama_kelas"><a href="../asset/siswa.php" class="white-text">Home</a></li>
+		<li class="nama_kelas"><a href="../prosesabsen/data_absen.php"  class="white-text">Data</a></li>
+		<li id="pesan"><i class="material-icons" style="font-size:35px;margin:20px 10px;color:white;">email</i></li>
+		<li id="settings"><i class="material-icons" style="font-size:30px;margin:20px;color:white;">settings</i></li><li><a href="../asset/log.php?op=out"><img src="../asset/img/logout.png" width="35px" height="30px" style="margin:20px 0px;" alt=""></a></li>
+</ul>
+	
+</div>	
+	<div class="container" style="margin-top:200px;">
+		<div class="container" style="background:#2A3132;border-radius:10px;">
+			<h4 class="center white-text">Settings</h4>
+			 <div class="row" style="margin:30px 100px;">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+          <input placeholder="Password" id="first_name" type="password" class="validate" style="color:white;">
+          <label for="first_name">Password Lama</label>
+        </div><div class="input-field col s12">
+          <input placeholder="Password Baru" id="first_name" type="password" class="validate" style="color:white;">
+          <label for="first_name">Password Baru</label>
+        </div><div class="input-field col s12">
+          <input placeholder="Ulangi Password Baru" id="first_name" type="password" class="validate" style="color:white;">
+          <label for="first_name">Ulangi Password Baru</label>
+        </div>
+		</div>
+		
+			<input type="submit" class="right tmb_submit">
+    </form>
+  </div>
+		</div>
+	</div>
+	
+	<div class="isipesan">
+	<?php
+	
+	$konek = mysqli_connect("localhost","root","","absensi");
+		
+	$work = "SELECT * FROM pesan WHERE kelas = '$_SESSION[kelas]'";
+	
+	$hasil = mysqli_query($konek,$work);
+?>
+<?php		
+	while($jk = mysqli_fetch_array($hasil)){
+?>
+	<div class="sender">
+		<h5><?php echo "$jk[nama_pengirim]";?></h5>
+	</div>
+	<div class="konten">
+		<p>
+			<?php echo "$jk[nama_siswa]"; ?>
+		</p>
+		<p>
+			<?php echo "$jk[isi]";?>
+		</p>
+		<hr style="background:white;">
+	</div>
+	<?php }	?>
+</div>
+
+<div class="isisettings">
+	<ul>
+		<a href=""><li class="liset">Kebijakan Privasi</li></a>
+		<a href=""><li class="liset">Settings</li></a>
+	</ul>
+</div>
+	
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<script src="js/materialize.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			
+    $('select').material_select();
+		$("#pesan").click(function(){
+        $(".isipesan").slideToggle("slow");
+		$(".isisettings").slideUp("slow");
+    });
+			
+			$("#settings").click(function(){
+        $(".isisettings").slideToggle("slow");
+		$(".isipesan").slideUp("slow");
+    });
+            
+		});
+	</script>
+</body>
+</html>

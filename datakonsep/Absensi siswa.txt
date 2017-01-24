@@ -1,0 +1,33 @@
+Fitur Guru : 
+	dapat mengabsen di kelas yang diajarnya
+
+Fitur perwakilan :
+	dapat mengabsen siswa di kelas dan mengirimkan data ke piket dan w.kelas setiap mata pelajaran
+
+Fitr piket :
+	mendata siswa terlambat dan dispen kemudian dikirimkan ke perwakilan kelas , menerima data kehadiran siswa setiap mata pelajaran
+
+Fitur W.kelas :
+	Melihat kehadiran siswa dan juga melihat biodata siswa yang berisi no hp keluarga siswa
+
+Fitur Admin :
+	Men-inputkan nama siswa , kelas , matpel 
+
+
+
+Jalan cerita :
+	Perwakilan -> Mengabsen setiap matpel ->send (W.kelas)
+
+if(data['siswa'] == "TERLAMBAT"){piket -> perwakilan}
+
+
+KONSEP :
+1st page -> halaman login (username & pw sudah ditentukan dan dapat diganti || tidak ada page create accounts)
+
+2nd page -> masuk kehalaman absensi masing"
+
+=========================PROBLEM=============================
+
+menyambungkan antara isi dari suatu relasi/entitas ke dalam php
+
+contoh : admin sudah input nama kelas , dan siswa . Kemudian jika yang login akun adalah akun RPL maka ditampilkan kelas RPL dan nama siswa" nya
